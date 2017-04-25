@@ -6,10 +6,10 @@ Pod::Spec.new do |s|
   s.license          = 'MIT'
   s.author           = { "ytakzk" => "blah@blahblahblah.com" }
   s.source           = { :git => "https://github.com/willks/YPImagePicker.git", :tag => s.version.to_s }
-  s.source_files     = 'Classes/**/.*'
+  
   s.platform     = :ios, '10.0'
   s.requires_arc = true
   s.source_files = 'Sources/**/*.swift'
   s.dependency  'SteviaLayout'
-  s.resources    = ['Sources/Assets.xcassets', 'Sources/**/*.xib']
+  s.resources    = ['Sources/Assets.xcassets', 'Sources/**/*.xib', 'Sources/**/Localizable.strings']
 end
